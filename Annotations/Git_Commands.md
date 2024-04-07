@@ -1,4 +1,4 @@
-# Opciones generales de inicialización de Git
+># Opciones generales de inicialización de Git
 
 
 ### Introducir usuario
@@ -21,13 +21,18 @@
 ```git config -h```
 
 ***
-# Inicializar Proyecto en Git
+># Inicializar Proyecto en Git
 ### Local
 ```git init```
+
 ```git branch -M main```
+
 ```git add .``` 
+
 ```git add archivo1 archivo2 ...```
+
 ```git commit -m "descripción del commit..."```
+
 ```git status```
 
 ### GitHub
@@ -39,7 +44,7 @@
   * ```git push -u origin master```
 
 ***
-## Comandos Comunes de Git
+>## Comandos Comunes de Git
 #### ```git init``` 
 "Crea un nuevo repositorio local de Git. Puedes ejecutar este comando en el directorio actual para iniciar un repositorio o especificar un nombre de proyecto para crear un repositorio en un directorio nuevo."
 
@@ -108,4 +113,7 @@
 ---
 
 #### ```git reset --hard HEAD```
-"Descartar todos los cambios en el directorio de trabajo y vuelve al estado del último commit. ___IRREVERSIBLE___"
+"Descarta todos los cambios en el directorio de trabajo (Working Directory)y vuelve al estado del último commit. ___IRREVERSIBLE___"
+
+***
+
