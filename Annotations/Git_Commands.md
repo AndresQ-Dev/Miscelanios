@@ -160,6 +160,10 @@ Vuelve aun estado anterior con el hash de un "git reflog"
 
 ---
 
-### ```git checkout -- archivo1.txt```
+#### ```git checkout -- archivo1.txt```
 
 revierte con cambios aún no incluidos al stage en working directory, volviendo al estado del último commit.
+
+---
+
+#### _I'm back_
