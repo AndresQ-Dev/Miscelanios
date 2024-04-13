@@ -1,4 +1,4 @@
-># Opciones generales de inicialización de Git
+> # Inicialización y Uso de Git / GitHub
 
 
 ### Introducir usuario
@@ -43,8 +43,9 @@
 * Luego de hacer commit colocar el siguiente comando para subir al repositorio online el estado del proyecto local:
   * ```git push -u origin master```
 
-***
->## Comandos Comunes de Git
+<br>
+
+> # Comandos Comunes de Git
 #### ```git init``` 
 "Crea un nuevo repositorio local de Git. Puedes ejecutar este comando en el directorio actual para iniciar un repositorio o especificar un nombre de proyecto para crear un repositorio en un directorio nuevo."
 
@@ -115,5 +116,50 @@
 #### ```git reset --hard HEAD```
 "Descarta todos los cambios en el directorio de trabajo (Working Directory)y vuelve al estado del último commit. ___IRREVERSIBLE___"
 
-***
+---
 
+#### ```git rm --cached <file>..." to unstage```
+
+Borra del stage los ultimo cambios despues del último commit...
+
+---
+
+#### ```git checkout -b nuevaRama```
+
+Crea la rama y se cambia a ella
+
+---
+
+#### ```git push origin nombre_de_la_nueva_rama```
+
+Si se crea una rama nueva y no se hacen cambios se puede pushear directamente a github
+
+--- 
+
+#### ```git restore --staged archivoX.txt```
+
+Se limpia el directorio de trabajo de los cambios a un archivo en específico.
+
+---
+
+#### ```git reset <hash_de_confirmacion>```
+
+Retroceder a una confirmación anterior con el número de hash
+
+---
+
+#### ```git reflog```
+
+muestra el registro completo almacenado en el repositorio despues de eliminado con git reset --hard y muestra un hash más corto para volver atrás...
+
+---
+
+#### ```git checkout <hash>```
+
+Vuelve aun estado anterior con el hash de un "git reflog" 
+
+---
+
+### ```git checkout -- archivo1.txt```
+
+revierte con cambios aún no incluidos al stage en working directory, volviendo al estado del último commit.
