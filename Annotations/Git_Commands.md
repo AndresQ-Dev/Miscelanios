@@ -162,8 +162,13 @@ Vuelve aun estado anterior con el hash de un "git reflog"
 
 #### ```git checkout -- archivo1.txt```
 
-revierte con cambios aún no incluidos al stage en working directory, volviendo al estado del último commit.
+Revierte con cambios aún no incluidos al stage en working directory, volviendo al estado del último commit.
 
 ---
+
+#### ```git reset --hard origin/master```
+
+Revierte los cambios hasta lo último que se cargó en GitHub.
+
 
 #### _I'm back_
