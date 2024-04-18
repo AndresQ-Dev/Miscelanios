@@ -156,7 +156,7 @@ muestra el registro completo almacenado en el repositorio despues de eliminado c
 
 #### ```git checkout <hash>```
 
-Vuelve aun estado anterior con el hash de un "git reflog" 
+Vuelve aun estado anterior con el hash de un ```git reflog```. Al hacerlo el puntero HEAD desaparece de la rama MAIN (o cualquiera en la que estabamos originalmente) y se posiciona en el hash del commit al que volvimos quedando desasociado y cualquieer commit que sea haga desde allí será eliminado por el Garbage Collector (commits huérfanos). Para volver al MAIN, o al paso anterior, se debe usar ```git checkout main``` (o master si fuese el caso). De esta forma se regresa a la posicón donde empezamos antes del usar ```git checkout <hash>```. Si quisieramos conservar los cambios podemos usar ```git checkout -b <nuevaRama>``` y dejarames los cambios en una nueva rama.
 
 ---
 
@@ -166,9 +166,23 @@ Revierte con cambios aún no incluidos al stage en working directory, volviendo 
 
 ---
 
+> El comando **```git reset <hash>```** se recomienda en los casos en donde se trabaja en ramas locales o privadas, pues esto borra del historial los commits en medio de la posición donde se reliza el _reset_ y el punto hasta el que se retrocede. Para los caso de ramas compartidas de trabajo colaborativo se recomienda **```git revert <hash>```** el cual revierte los cambios hasta un estado anterior sin eliminar los intermedios y pudiendo volver a ellos...
+
 #### ```git reset --hard origin/master```
 
 Revierte los cambios hasta lo último que se cargó en GitHub.
 
+
+#### ```git reflog```
+
+Muestra todos los moviemientos guardados incluso si se realizó un ```git reset --hard```
+
+#### ```git tag <nombreTag>```
+
+Crea un punto al que es posible volver con un nombre específico. **```git tag```** muestra el listado de tags existentes y con **```git checkout tags/<nombreTag>```** navego hacia esos puntos personalizados cambiando el HEAD (para volver el head hacia el final de la rama **```git checkout main```**).
+
+#### ```git stash```
+
+Envia los últimos cambios en el working directory a un estado donde lo guarda temporalmente sin hacer commit y llevarlo al stage. Depues de ello se puede cambiar de ram, por ejemplo, sin perder los cambios en la rama actual. Para listar estos puntos de stash se usa **```git stash list```** y para volver a cargar el estado enque se dejó **```git stash pop```** luego de volver a la rama original. Para eliminar el stash **```git stash drop```*
 
 #### _I'm back_
