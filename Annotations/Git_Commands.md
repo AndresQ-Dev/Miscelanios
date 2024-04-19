@@ -183,6 +183,21 @@ Crea un punto al que es posible volver con un nombre específico. **```git tag``
 
 #### ```git stash```
 
-Envia los últimos cambios en el working directory a un estado donde lo guarda temporalmente sin hacer commit y llevarlo al stage. Depues de ello se puede cambiar de ram, por ejemplo, sin perder los cambios en la rama actual. Para listar estos puntos de stash se usa **```git stash list```** y para volver a cargar el estado enque se dejó **```git stash pop```** luego de volver a la rama original. Para eliminar el stash **```git stash drop```*
+Envia los últimos cambios en el working directory a un estado donde lo guarda temporalmente sin hacer commit y llevarlo al stage. Depues de ello se puede, por ejemplo, cambiar de rama sin perder los cambios en la rama actual. Para listar estos puntos de stash se usa **```git stash list```** y para volver a cargar el estado en que quedamos **```git stash pop```**, luego de volver a la rama original. Para eliminar el stash **```git stash drop```*
+
+#### Opciones para log y Alias
+> git --oneline --all --graph --decorate
+> git config --global alias.<nombreAlias> "log --oneline --all --graph --decorate"
+
+#### Extras
+* Para aumentar buufer en VSC con respecto a Github (100MiB)
+  
+  * git config http.postBuffer 104857600
+
+* Ver tamaño actual de Buffer Configurado
+   * git config --get http.postBuffer
+
+* Configurar Buffer a nivel Global
+   * git config --global http.postBuffer 104857600
 
 #### _I'm back_
