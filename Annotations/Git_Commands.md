@@ -76,15 +76,12 @@
 
 ---
 
-#### ```git branch ```
-"Lista las ramas disponibles"
+#### ```branch ```
+* ```git branch``` "Lista las ramas disponibles"
 * ```git branch nombreDeLaRama``` "crea una rama con el nombre indicado."
-* ```git branch -d nombreDeLaRama``` "elimina la rama indicada."
-
----
-
-#### ```git switch nombreDeLaRama```
-"Cambia a la rama indicada."
+* ```git branch -d nombreDeLaRama``` "elimina la rama indicada verificando si ya fue hecho un _merge_ hacia otra."
+* ```git branch -D nombreDeLaRama``` "Fuerza la  eliminación de la rama indicada."
+* ```swicht <rama>``` "Cambia a la rama que se le indica"
 
 ---
 
@@ -93,13 +90,17 @@
 
 ---
 
-#### ```git merge nombreDeLaRama```
-"Fusiona cambios de una rama indicada con la actual."
+#### ```git merge <nombreDeLaRama>```
+"Fusiona cambios de una rama indicada con la actual. **IMPORTANTE**: se debe realizar desdee la rama que recibe la fusión. "
 
 ---
 
 #### ```git log```
 "Muestra el historial de commits."
+
+#### Opciones para log y alias
+> ```git log --oneline --all --graph --decorate```
+> ```git config --global alias.<nombreAlias> "log --oneline --all --graph --decorate"```
 
 ---
 
@@ -124,13 +125,13 @@ Borra del stage los ultimo cambios despues del último commit...
 
 ---
 
-#### ```git checkout -b nuevaRama```
+#### ```git checkout -b <nuevaRama>```
 
 Crea la rama y se cambia a ella
 
 ---
 
-#### ```git push origin nombre_de_la_nueva_rama```
+#### ```git push origin <nombre_de_la_nueva_rama>```
 
 Si se crea una rama nueva y no se hacen cambios se puede pushear directamente a github
 
@@ -144,7 +145,7 @@ Se limpia el directorio de trabajo de los cambios a un archivo en específico.
 
 #### ```git reset <hash_de_confirmacion>```
 
-Retroceder a una confirmación anterior con el número de hash
+Retroceder a una confirmación anterior con el número de hash.
 
 ---
 
@@ -156,7 +157,7 @@ muestra el registro completo almacenado en el repositorio despues de eliminado c
 
 #### ```git checkout <hash>```
 
-Vuelve aun estado anterior con el hash de un ```git reflog```. Al hacerlo el puntero HEAD desaparece de la rama MAIN (o cualquiera en la que estabamos originalmente) y se posiciona en el hash del commit al que volvimos quedando desasociado y cualquieer commit que sea haga desde allí será eliminado por el Garbage Collector (commits huérfanos). Para volver al MAIN, o al paso anterior, se debe usar ```git checkout main``` (o master si fuese el caso). De esta forma se regresa a la posicón donde empezamos antes del usar ```git checkout <hash>```. Si quisieramos conservar los cambios podemos usar ```git checkout -b <nuevaRama>``` y dejarames los cambios en una nueva rama.
+Vuelve aun estado anterior con el hash de un ```git reflog```. Al hacerlo el puntero HEAD desaparece de la rama MAIN (o cualquiera en la que estabamos originalmente) y se posiciona en el hash del commit al que volvimos quedando desasociado y cualquieer commit que sea haga desde allí será eliminado por el Garbage Collector (commits huérfanos). Para volver al MAIN, o al paso anterior, se debe usar ```git checkout main``` (o master si fuese el caso). De esta forma se regresa a la posicón donde empezamos antes del usar ```git checkout <hash>```. Si quisieramos conservar los cambios podemos usar ```git checkout -b <nuevaRama>``` y llevaremos los cambios en una nueva rama.
 
 ---
 
@@ -185,19 +186,15 @@ Crea un punto al que es posible volver con un nombre específico. **```git tag``
 
 Envia los últimos cambios en el working directory a un estado donde lo guarda temporalmente sin hacer commit y llevarlo al stage. Depues de ello se puede, por ejemplo, cambiar de rama sin perder los cambios en la rama actual. Para listar estos puntos de stash se usa **```git stash list```** y para volver a cargar el estado en que quedamos **```git stash pop```**, luego de volver a la rama original. Para eliminar el stash **```git stash drop```*
 
-#### Opciones para log y Alias
-> git --oneline --all --graph --decorate
-> git config --global alias.<nombreAlias> "log --oneline --all --graph --decorate"
-
 #### Extras
-* Para aumentar buufer en VSC con respecto a Github (100MiB)
+* **Para aumentar buffer en VSC con respecto a Github (100MiB)**
   
   * git config http.postBuffer 104857600
 
-* Ver tamaño actual de Buffer Configurado
+* **Ver tamaño actual de Buffer Configurado**
    * git config --get http.postBuffer
 
-* Configurar Buffer a nivel Global
+* **Configurar Buffer a nivel Global en 100MiB**
    * git config --global http.postBuffer 104857600
 
 #### _I'm back_
