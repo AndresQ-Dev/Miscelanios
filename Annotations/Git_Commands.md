@@ -197,4 +197,8 @@ Envia los últimos cambios en el working directory a un estado donde lo guarda t
 * **Configurar Buffer a nivel Global en 100MiB**
    * git config --global http.postBuffer 104857600
 
+#### ```git checkout -- .```
+
+Elimina todos los cambios no confirmados hasta el último commit (unstage) en el working directory. Si se necesita revertir cambios ya añadidos con "add" se puede usar ```git reset HEAD <archivo>``` y luego usar ```git checkout <archivo_especifico>```. En caso de quedar archivos agregados o eliminados se limpia con ```git clean -fd``` el cual elimina archivos no rastreados y directorios que no están en el repositorio (-f fuerza la limpieza y -d elimina directorios no rastreados)
+
 #### _I'm back_
