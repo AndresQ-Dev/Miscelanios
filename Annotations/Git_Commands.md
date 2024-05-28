@@ -201,4 +201,22 @@ Envia los últimos cambios en el working directory a un estado donde lo guarda t
 
 Elimina todos los cambios no confirmados hasta el último commit (unstage) en el working directory. Si se necesita revertir cambios ya añadidos con "add" se puede usar ```git reset HEAD <archivo>``` y luego usar ```git checkout <archivo_especifico>```. En caso de quedar archivos agregados o eliminados se limpia con ```git clean -fd``` el cual elimina archivos no rastreados y directorios que no están en el repositorio (-f fuerza la limpieza y -d elimina directorios no rastreados)
 
+# 1. Asegúrate de que todos los cambios estén confirmados
+git add .
+git commit -m "Preparando la versión 1.0"
+
+# 2. Empuja los cambios al branch main
+git push origin main
+
+# 3. Crear una etiqueta anotada
+git tag -a v1.0 -m "Versión 1.0"
+
+# 4. Subir la etiqueta específica
+git push origin v1.0
+
+# (Opcional) Subir todas las etiquetas
+git push origin --tags
+
+
+
 #### _I'm back_
