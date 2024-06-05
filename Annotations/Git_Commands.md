@@ -62,7 +62,7 @@
 ---
 
 #### ```git commit```
-"Crea una instantánea de los cambios y la guarda en el directorio Git. Acompaña tu commit con un mensaje descriptivo: git commit -m "Mensaje del commit aquí"
+"Crea una instantánea de los cambios y la guarda en el directorio Git. Se debe acompañar mensaje descriptivo: git commit -m "Mensaje del commit aquí"
 
 ---
 
@@ -78,9 +78,9 @@
 
 #### ```branch ```
 * ```git branch``` "Lista las ramas disponibles"
-* ```git branch nombreDeLaRama``` "crea una rama con el nombre indicado."
-* ```git branch -d nombreDeLaRama``` "elimina la rama indicada verificando si ya fue hecho un _merge_ hacia otra."
-* ```git branch -D nombreDeLaRama``` "Fuerza la  eliminación de la rama indicada."
+* ```git branch nombreDeLaRama``` "crea una rama con el nombre indicado"
+* ```git branch -d nombreDeLaRama``` "elimina la rama indicada verificando si ya fue hecho un _merge_ hacia otra"
+* ```git branch -D nombreDeLaRama``` "Fuerza la  eliminación de la rama indicada"
 * ```swicht <rama>``` "Cambia a la rama que se le indica"
 
 ---
