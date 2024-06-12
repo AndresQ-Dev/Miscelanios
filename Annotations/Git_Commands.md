@@ -56,6 +56,11 @@
 
 ---
 
+#### ```git clone --fetch-all```
+"Copia un repositorio con todas las ramas existentes ```git clone --fetch-all <urlDelRepositorio>```"
+
+---
+
 #### ```git add```
 "Agrega archivos al área de preparación (staging). Por ejemplo, para indexar el archivo temp.txt, utiliza git add temp.txt. Para agregar todos los archivos utiliza el "." ````git add .``"
 
