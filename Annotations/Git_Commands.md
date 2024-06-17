@@ -227,6 +227,10 @@ git push origin v1.0
 # (Opcional) Subir todas las etiquetas
 git push origin --tags
 
+## Agregar
+"Si se borra un archivo con "rm" se deshace con "git checkout  -- <nombreDeArchivo>"
+
+"Si se borrá con "git rm" se deshace con "git reset HEAD <nombreDeArchivo>""
 
 
 #### _...I'm back_
