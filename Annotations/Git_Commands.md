@@ -71,6 +71,11 @@
 
 ---
 
+#### ```git commit --amend --no-edit```
+"Revise su último commit sin modificar el mensaje ni el hash. Enmienda un commit sin modificar el comentario o el hash cuando se realizó una confirmación e inmediatemanete encontramos un error mínimo que nomerece un nuevo commit."
+
+---
+
 #### ```git status```
 "Muestra la lista de archivos modificados, así como los archivos que están por ser preparados o confirmados."
 
