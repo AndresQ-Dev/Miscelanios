@@ -232,5 +232,7 @@ git push origin --tags
 
 "Si se borrá con "git rm" se deshace con "git reset HEAD <nombreDeArchivo>""
 
+### git remote --v
+Ver los accesos a push y fetch actuales...
 
 #### _...I'm back_
