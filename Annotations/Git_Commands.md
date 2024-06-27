@@ -1,4 +1,4 @@
-> # Inicialización y Uso de Git / GitHub
+> # Notas sobre la inicialización y uso de Git / GitHub
 
 
 ### Introducir usuario
@@ -236,5 +236,7 @@ git push origin --tags
 Ver los accesos a push y fetch actuales...
 
 ### Agregar uso de token...
+
+Después de configuración de mail y usuario agregar token...
 
 #### _...I'm back_
