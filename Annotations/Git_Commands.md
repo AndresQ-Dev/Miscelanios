@@ -72,7 +72,8 @@
 ---
 
 #### ```git commit --amend --no-edit```
-"Revise su último commit sin modificar el mensaje ni el hash. Enmienda un commit sin modificar el comentario o el hash cuando se realizó una confirmación e inmediatemanete encontramos un error mínimo que nomerece un nuevo commit."
+"Revise su último commit sin modificar el mensaje ni el hash. Enmienda un commit sin modificar el comentario o el hash cuando se realizó una confirmación e inmediatemanete encontramos un error mínimo que nomerece un nuevo commit. Despues de un *amend* se debe ejecutar un ```git push origin <nombre-rama> --force```
+"
 
 ---
 
