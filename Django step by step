@@ -1,4 +1,4 @@
-### Estructura recomendada:
+# Estructura recomendada:
 
 myproject/
 ├── manage.py
