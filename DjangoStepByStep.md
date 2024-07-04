@@ -19,8 +19,9 @@ myproject/
     └── urls.py
 
 # 1. Crear un Proyecto Django
-'''django-admin startproject myproject
-cd myproject'''
+
+´´´django-admin startproject myproject
+cd myproject´´´
 
 # 2. Crear una Aplicación Django
 python manage.py startapp myapp
