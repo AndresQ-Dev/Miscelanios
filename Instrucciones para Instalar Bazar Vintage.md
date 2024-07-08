@@ -16,7 +16,7 @@
 ### Activar el entorno virtual en MacOS o Linux
 ```source env/bin/activate```
 
-### Activar entrono virtual en Windows: 
+### Activar el entorno virtual en Windows: 
 acceder a la carpeta ```env/Scripts/``` y ejecutar:
 
 ```activate```
