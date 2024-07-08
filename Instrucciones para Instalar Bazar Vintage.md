@@ -21,22 +21,22 @@
 #### Instalar las dependencias del proyecto desde el archivo requirements.txt
 ```pip install -r requirements.txt```
 
-# Realizar las migraciones de la base de datos
+### Realizar las migraciones de la base de datos
 ```python manage.py makemigrations```
 
 ```python manage.py migrate```
 
-# Crear un usuario administrador para la base de datos
+### Crear un usuario administrador para la base de datos
 ```python manage.py createsuperuser```
 
-# Crear la estructura de carpetas para las imágenes en "core"
+### Crear la estructura de carpetas para las imágenes en "core"
 ```core/media/products```
 
-# Colocar la imagen por defecto que tendránen los productos en la carpeta <products>
+### Colocar la imagen por defecto que tendránen los productos en la carpeta <products>
 Debe tener el siguiente nombre: 
 ```"default_image.jpg"```
 
-# Correr el servidor
+### Correr el servidor
 ```python manage.py runserver```
 
-# :::ENJOY:::
+## :::ENJOY:::
