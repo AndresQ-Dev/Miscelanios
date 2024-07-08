@@ -15,6 +15,7 @@
 
 ### Activar el entorno virtual
 ```source env/bin/activate (MacOS o Linux)```
+
 ```env/Scripts/activate (Windows)```
 
 #### Instalar las dependencias del proyecto desde el archivo requirements.txt
@@ -22,6 +23,7 @@
 
 # Realizar las migraciones de la base de datos
 ```python manage.py makemigrations```
+
 ```python manage.py migrate```
 
 # Crear un usuario administrador para la base de datos
