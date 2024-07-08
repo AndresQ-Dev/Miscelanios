@@ -13,10 +13,13 @@
 ### Cambiar directorio a BazarVintageDjango
 ```cd BazarVintageDjango```
 
-### Activar el entorno virtual
-```source env/bin/activate (MacOS o Linux)```
+### Activar el entorno virtual en MacOS o Linux
+```source env/bin/activate```
 
-```env/Scripts/activate (Windows)```
+### Activar entrono virtual en Windows: 
+acceder a la carpeta ```env/Scripts/``` y ejecutar:
+
+```activate```
 
 #### Instalar las dependencias del proyecto desde el archivo requirements.txt
 ```pip install -r requirements.txt```
