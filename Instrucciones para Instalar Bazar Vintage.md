@@ -32,7 +32,7 @@
 ### Crear la estructura de carpetas para las imágenes en "core"
 ```core/media/products```
 
-### Colocar la imagen por defecto que tendránen los productos en la carpeta <products>
+### Colocar la imagen por defecto que tendránen los productos en la carpeta _*products*_
 
 Debe tener el siguiente nombre: 
 ```"default_image.jpg"```
