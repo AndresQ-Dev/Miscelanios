@@ -1,4 +1,4 @@
-# Instrucciones para correr la App Bazar Vintage
+# Instrucciones para correr la App **Bazar Vintage**
 
 ### Crear una carpeta
 
