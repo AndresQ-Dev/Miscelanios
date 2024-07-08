@@ -33,6 +33,7 @@
 ```core/media/products```
 
 ### Colocar la imagen por defecto que tendránen los productos en la carpeta <products>
+
 Debe tener el siguiente nombre: 
 ```"default_image.jpg"```
 
