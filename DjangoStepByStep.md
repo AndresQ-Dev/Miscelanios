@@ -31,7 +31,7 @@ python manage.py startapp myapp
 
 INSTALLED_APPS = [
     ...
-    'myapp',
+    'myapp', # agrego app creada
 ]
 
 # Agregar configuración para archivos estáticos y media
