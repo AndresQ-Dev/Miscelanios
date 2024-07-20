@@ -43,4 +43,6 @@ Debe tener el siguiente nombre:
 ### Correr el servidor
 ```python manage.py runserver```
 
+agregar estructura recomendada del proecto...
+
 ## :::ENJOY:::
