@@ -238,6 +238,6 @@ Ver los accesos a push y fetch actuales...
 
 ### Agregar uso de token...
 
-Después de configuración de mail y usuario agregar token... ()
+Después de configuración de mail y usuario agregar token..
 
 #### _...I'm back_
